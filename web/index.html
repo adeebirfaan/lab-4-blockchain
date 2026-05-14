@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supply Chain Blockchain UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Supply Chain Management (Simulated Hyperledger Fabric)</h1>
+
+<div class="container">
+
+    <!-- ============ CREATE PRODUCT ============ -->
+    <div class="card">
+        <h2>Create Product</h2>
+        <label>Product ID</label>
+        <input type="text" id="c_id" placeholder="e.g. P1001">
+
+        <label>Product Name</label>
+        <input type="text" id="c_name" placeholder="e.g. Fresh Mango">
+
+        <label>Owner</label>
+        <input type="text" id="c_owner" placeholder="e.g. Farm A">
+
+        <button onclick="createProduct()">Create</button>
+        <p class="msg" id="create_msg"></p>
+    </div>
+
+    <!-- ============ TRANSFER PRODUCT ============ -->
+    <div class="card">
+        <h2>Transfer Product</h2>
+        <label>Product ID</label>
+        <input type="text" id="t_id" placeholder="e.g. P1001">
+
+        <label>New Owner</label>
+        <input type="text" id="t_owner" placeholder="e.g. Distributor A">
+
+        <button onclick="transferProduct()">Transfer</button>
+        <p class="msg" id="transfer_msg"></p>
+    </div>
+
+    <!-- ============ QUERY PRODUCT ============ -->
+    <div class="card">
+        <h2>Query Product</h2>
+        <label>Product ID</label>
+        <input type="text" id="q_id" placeholder="P1001">
+
+        <button onclick="queryProduct()">Search</button>
+        <pre id="result" class="result-box"></pre>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

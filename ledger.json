@@ -1,0 +1,137 @@
+{
+  "worldState": {
+    "P1001": {
+      "productID": "P1001",
+      "name": "Fresh Mango",
+      "owner": "Retailer X",
+      "status": "TRANSFERRED",
+      "timestamp": "2026-05-14T06:59:31.940Z",
+      "history": [
+        {
+          "action": "CREATED",
+          "owner": "Farm A",
+          "timestamp": "2026-05-14T06:59:31.937Z"
+        },
+        {
+          "action": "TRANSFERRED",
+          "from": "Farm A",
+          "to": "Distributor A",
+          "timestamp": "2026-05-14T06:59:31.939Z"
+        },
+        {
+          "action": "TRANSFERRED",
+          "from": "Distributor A",
+          "to": "Retailer X",
+          "timestamp": "2026-05-14T06:59:31.940Z"
+        }
+      ]
+    },
+    "P1002": {
+      "productID": "P1002",
+      "name": "Fresh Salmon",
+      "owner": "Farm B",
+      "status": "CREATED",
+      "timestamp": "2026-05-14T06:59:31.938Z",
+      "history": [
+        {
+          "action": "CREATED",
+          "owner": "Farm B",
+          "timestamp": "2026-05-14T06:59:31.938Z"
+        }
+      ]
+    },
+    "P101": {
+      "productID": "P101",
+      "name": "Fresh Mango",
+      "owner": "Farm A",
+      "status": "CREATED",
+      "timestamp": "2026-05-14T07:00:42.390Z",
+      "history": [
+        {
+          "action": "CREATED",
+          "owner": "Farm A",
+          "timestamp": "2026-05-14T07:00:42.390Z"
+        }
+      ]
+    }
+  },
+  "transactions": [
+    {
+      "txId": "TX1778741971937243",
+      "type": "CREATE",
+      "payload": {
+        "productID": "P1001",
+        "name": "Fresh Mango",
+        "owner": "Farm A",
+        "status": "CREATED",
+        "timestamp": "2026-05-14T06:59:31.937Z",
+        "history": [
+          {
+            "action": "CREATED",
+            "owner": "Farm A",
+            "timestamp": "2026-05-14T06:59:31.937Z"
+          }
+        ]
+      },
+      "timestamp": "2026-05-14T06:59:31.937Z"
+    },
+    {
+      "txId": "TX1778741971938261",
+      "type": "CREATE",
+      "payload": {
+        "productID": "P1002",
+        "name": "Fresh Salmon",
+        "owner": "Farm B",
+        "status": "CREATED",
+        "timestamp": "2026-05-14T06:59:31.938Z",
+        "history": [
+          {
+            "action": "CREATED",
+            "owner": "Farm B",
+            "timestamp": "2026-05-14T06:59:31.938Z"
+          }
+        ]
+      },
+      "timestamp": "2026-05-14T06:59:31.938Z"
+    },
+    {
+      "txId": "TX1778741971939176",
+      "type": "TRANSFER",
+      "payload": {
+        "productID": "P1001",
+        "from": "Farm A",
+        "to": "Distributor A"
+      },
+      "timestamp": "2026-05-14T06:59:31.939Z"
+    },
+    {
+      "txId": "TX1778741971940569",
+      "type": "TRANSFER",
+      "payload": {
+        "productID": "P1001",
+        "from": "Distributor A",
+        "to": "Retailer X"
+      },
+      "timestamp": "2026-05-14T06:59:31.940Z"
+    },
+    {
+      "txId": "TX1778742042390336",
+      "type": "CREATE",
+      "payload": {
+        "productID": "P101",
+        "name": "Fresh Mango",
+        "owner": "Farm A",
+        "status": "CREATED",
+        "timestamp": "2026-05-14T07:00:42.390Z",
+        "history": [
+          {
+            "action": "CREATED",
+            "owner": "Farm A",
+            "timestamp": "2026-05-14T07:00:42.390Z"
+          }
+        ]
+      },
+      "timestamp": "2026-05-14T07:00:42.390Z"
+    }
+  ]
+}

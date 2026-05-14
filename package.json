@@ -1,0 +1,13 @@
+{
+  "name": "supplychain-simulated",
+  "version": "1.0.0",
+  "description": "FreshFarm Supply Chain - Simulated Hyperledger Fabric Blockchain Application (Lab Module 4)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node contract/testContract.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
